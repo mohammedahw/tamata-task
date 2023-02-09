@@ -7,7 +7,7 @@ export default function Navbar() {
       role="navigation"
     >
       <div>Tamata Task</div>
-      <div className="pr-8 md:block hidden">
+      <div>
         <Link to="/" className="p-4">
           Question One
         </Link>
