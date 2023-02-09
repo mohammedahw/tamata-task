@@ -65,7 +65,7 @@ export default function QuestionOne() {
             {result.map((interval: string, idx: number) => {
               return (
                 <>
-                  <div key={interval}>
+                  <div key={idx}>
                     Interval #{idx + 1}: {interval}
                   </div>
                 </>
