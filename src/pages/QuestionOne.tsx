@@ -60,7 +60,7 @@ export default function QuestionOne() {
       </div>
       {result.length > 0 && (
         <div className="flex flex-col justify-center items-center mt-4">
-          <div className="font-bold text-lg">Result:</div>
+          <div className="font-bold text-lg">Result: {result.length}</div>
           <div className="text-lg">
             {result.map((interval: string, idx: number) => {
               return (
