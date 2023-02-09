@@ -7,6 +7,7 @@ import customers from "../data/customers.json";
 import { useEffect, useState } from "react";
 import { Address } from "../types";
 import LoadingSpinner from "../components/LoadingSpinner";
+import { Icon } from "leaflet";
 
 const randomRegions = Array.from({ length: 4 }, () => {
   return regions[Math.floor(Math.random() * regions.length)];
@@ -115,6 +116,14 @@ export default function QuestionOne() {
               <Marker
                 position={[customer.lat, customer.lng]}
                 title={customer.name}
+                icon={
+                  new Icon({
+                    iconUrl:
+                      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Map_marker_font_awesome.svg/1200px-Map_marker_font_awesome.svg.png",
+                    iconSize: [30, 30],
+                    backgroundColor: "transparent",
+                  })
+                }
               />
             </MapContainer>
           </div>
