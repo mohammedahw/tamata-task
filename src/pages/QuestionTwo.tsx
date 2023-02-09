@@ -1,7 +1,6 @@
 import { MapContainer, TileLayer, Marker, Polygon } from "react-leaflet";
 import Navbar from "../components/Navbar";
 import "leaflet/dist/leaflet.css";
-import "leaflet-defaulticon-compatibility";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import regions from "../data/regions.json";
 import customers from "../data/customers.json";
